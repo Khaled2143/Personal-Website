@@ -1,0 +1,301 @@
+.contact {
+  position: relative;
+  padding: clamp(70px, 9vw, 120px) 20px 150px;
+  background: linear-gradient(#1c1712, #100c08);
+  border-top: 1px solid #2e2417;
+}
+
+.contact-inner {
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+/* Header */
+.contact-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.contact-eyebrow {
+  font-family: "Cinzel", serif;
+  font-size: 12px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #d4b16a;
+  margin-bottom: 10px;
+}
+
+.contact-title {
+  font-family: "Cinzel", serif;
+  font-weight: 700;
+  font-size: clamp(30px, 5vw, 52px);
+  margin: 0;
+  color: #f1e6cf;
+}
+
+/* Trade window shell */
+.trade-window {
+  border-radius: 16px;
+  overflow: hidden;
+  background: linear-gradient(#241c12, #15100a);
+  border: 2px solid #0a0805;
+  box-shadow:
+    inset 0 0 0 1px #d4b16a66,
+    0 18px 44px rgba(0, 0, 0, 0.5);
+}
+
+.trade-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 13px 18px;
+  background: linear-gradient(#3a2c1a, #241a10);
+  border-bottom: 2px solid #0a0805;
+}
+
+.trade-bar-title {
+  font-family: "Cinzel", serif;
+  font-weight: 700;
+  font-size: 16px;
+  color: #f7e6b0;
+}
+
+.trade-bar-dot {
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background: #6fcf5b;
+  box-shadow: 0 0 6px #6fcf5b;
+}
+
+.trade-body {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* LEFT column */
+.trade-offer {
+  flex: 1 1 280px;
+  min-width: 260px;
+  padding: 22px;
+  border-right: 1px solid #2e2417;
+}
+
+.trade-col-label {
+  font-family: "Cinzel", serif;
+  font-size: 12px;
+  letter-spacing: 1.5px;
+  color: #9a8b6f;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+
+.trade-contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.trade-contact {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  padding: 12px;
+  border-radius: 10px;
+  background: #15100a;
+  border: 1px solid #2e2417;
+  text-decoration: none;
+  transition:
+    border-color 0.15s ease,
+    background 0.15s ease;
+}
+
+.trade-contact.link {
+  cursor: pointer;
+}
+
+.trade-contact.link:hover {
+  border-color: #d4b16a;
+  background: #1c150d;
+}
+
+.trade-icon {
+  width: 40px;
+  height: 40px;
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  box-shadow: inset 0 0 0 1px #2e2417;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.trade-contact-meta {
+  min-width: 0;
+}
+
+.trade-contact-label {
+  font-size: 14px;
+  color: #f1e6cf;
+  font-weight: 600;
+}
+
+.trade-contact-value {
+  font-size: 12.5px;
+  color: #9a8b6f;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* RIGHT column */
+.trade-message {
+  flex: 1.2 1 300px;
+  min-width: 280px;
+  padding: 22px;
+}
+
+.trade-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.trade-input {
+  padding: 12px 13px;
+  border-radius: 9px;
+  background: #0e0a06;
+  border: 1px solid #2e2417;
+  color: #f1e6cf;
+  font-family: "Outfit", sans-serif;
+  font-size: 15px;
+  outline: none;
+  transition: border-color 0.15s ease;
+}
+
+.trade-input::placeholder {
+  color: #6b5e48;
+}
+
+.trade-input:focus {
+  border-color: #d4b16a;
+}
+
+.trade-textarea {
+  resize: vertical;
+  min-height: 96px;
+}
+
+.trade-error {
+  font-size: 13px;
+  color: #f2994a;
+}
+
+.trade-send {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  text-align: center;
+  padding: 14px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(#e7c87b, #bd9748);
+  color: #1c1712;
+  font-family: "Cinzel", serif;
+  font-weight: 700;
+  font-size: 17px;
+  box-shadow:
+    inset 0 1px 0 #fff3cf,
+    inset 0 0 0 1px #8a6a2f,
+    0 6px 16px rgba(0, 0, 0, 0.4);
+  transition:
+    filter 0.15s ease,
+    transform 0.05s ease;
+}
+
+.trade-send:hover {
+  filter: brightness(1.06);
+}
+
+.trade-send:active {
+  transform: translateY(1px);
+}
+
+.trade-send .sweep {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 36px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.55),
+    transparent
+  );
+  transform: translateX(-120%);
+  animation: sweep 5s ease-in-out infinite;
+}
+
+/* Success state */
+.trade-success {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 240px;
+  gap: 12px;
+}
+
+.trade-check {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: radial-gradient(circle at 40% 30%, #6fcf5b, #2f7a23);
+  color: #0c0906;
+  font-size: 30px;
+}
+
+.trade-success-title {
+  font-family: "Cinzel", serif;
+  font-weight: 700;
+  font-size: 22px;
+  color: #6fcf5b;
+}
+
+.trade-success-msg {
+  font-size: 15px;
+  color: #c9bda3;
+  font-weight: 300;
+  margin: 0;
+  max-width: 260px;
+}
+
+.trade-again {
+  margin-top: 4px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 13px;
+  color: #d4b16a;
+  text-decoration: underline;
+  font-family: inherit;
+}
+
+/* Footer */
+.contact-footer {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 13px;
+  color: #5e5340;
+}
+
+.contact-footer-name {
+  font-family: "Cinzel", serif;
+  letter-spacing: 1px;
+}

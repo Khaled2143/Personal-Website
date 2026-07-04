@@ -5,6 +5,13 @@ body {
   background: #120e0a;
 }
 
+button {
+  border: none;
+}
+
+p {
+  margin: 0;
+}
 * {
   box-sizing: border-box;
 }

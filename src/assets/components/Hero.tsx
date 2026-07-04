@@ -22,6 +22,20 @@ function Hero() {
         ship it. Native apps, AI agents, full-stack platforms. AI is a tool I
         wield to amplify my craft, not a shortcut around it.
       </p>
+
+      <div>
+        <button className="project-button">
+          <div className="sweep"></div>
+          <p className="project-button-title">Login</p>
+          <p className="project-button-subtitle">View Projects</p>
+        </button>
+
+        <button className="contact-me-button">
+          <p className="contact-me-button-title">Create Account</p>
+          <p className="contact-me-button-subtitle">Contact Me</p>
+        </button>
+      </div>
+
       <div className="ember-layer">
         {embers.map((e, i) => (
           <div
